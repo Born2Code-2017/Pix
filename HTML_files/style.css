@@ -1,5 +1,6 @@
-/* -----------------CSS DI NAV E FOOTER---------------
-                    NON MODIFICARE */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
 
 body{
     margin: 0;
@@ -43,19 +44,11 @@ footer img{
 }
 
 .fa {
-    color: yellow;
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
-    font-size: 14px;
+        font-size: 30px;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    -moz-font-smoothing: grayscale;
-
+    -moz-osx-font-smoothing: grayscale;
 }
-
-.fa-heart::before{
-    content: "\f004";
-}
-
-/* ----------------------------------------------------- */
