@@ -1,3 +1,6 @@
+/* -----------------CSS DI NAV E FOOTER---------------
+                    NON MODIFICARE */
+
 body{
     margin: 0;
 }
@@ -54,3 +57,5 @@ footer img{
 .fa-heart::before{
     content: "\f004";
 }
+
+/* ----------------------------------------------------- */
