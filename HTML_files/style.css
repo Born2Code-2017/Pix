@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    background-color: #17282f;
+    overflow: hidden;
+}
+
+#logo{
+    float: left;
+}
+
+nav{
+    float: right;
+    width: 50%;
+}
+
+#navContainer{
+    margin: 10px 0px 10px 0px;
+}
+
+#navContainer a{
+    text-decoration: none;
+    color: #f8f1d4;
+    font-family: 'Roboto Slab', serif;
+    padding: 0 40px 0 20px
+}
+
+footer{
+    background-color: #17282f;
+    color: #f8f1d4;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer img{
+    width: 10%;
+}
+
+.fa {
+    color: yellow;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 14px;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+
+}
+
+.fa-heart::before{
+    content: "\f004";
+}
