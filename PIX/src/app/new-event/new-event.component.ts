@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Events} from './events';
+import {Event} from "../events/events.model";
 
 @Component({
   selector: 'app-newevent',
@@ -8,7 +8,7 @@ import {Events} from './events';
 })
 export class NewEventComponent {
 
-  events: Events[];
+  events: Event[];
   array = [];
   private name: string;
   private description: string;
@@ -18,7 +18,7 @@ export class NewEventComponent {
 
   createEvent() {
     let event;
-    event = new Events();
+    event = new Event();
     event.name = this.name;
     event.description = this.description;
     event.time = this.time;
