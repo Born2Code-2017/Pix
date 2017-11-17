@@ -7,4 +7,5 @@ export class Event{
     owner: string;
     location: string;
     image: any;
+    partecipants: number;
 }
