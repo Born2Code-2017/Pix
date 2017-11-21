@@ -1,48 +1,32 @@
 import {Component, OnInit} from '@angular/core';
-import {Event} from './events.model'
+import {Event} from './events.model';
+import {PixService} from "../app.service";
+
 
 @Component({
   selector: 'app-events',
   templateUrl: 'events.component.html',
-  styleUrls: ['./events.component.css']
+  styleUrls: ['./events.component.css'],
+  providers: [PixService]
 })
 
 export class EventsComponent implements OnInit {
 
   eventsList: Event[];
   public incoming = [];
+  private service: PixService;
 
 
-  constructor() {
+  constructor(service: PixService) {
+    this.service = service;
     this.loadEvents();
   }
 
   loadEvents() {
-    this.eventsList = [
-      {
-        id: 0,
-        name: "astrophotography",
-        description: "Sto cazzo",
-        date: "12/12/2017",
-        hour: "6:30 pm",
-        owner: "Robert Foster ",
-        location: "Monte Mario,Roma",
-        image: "C:\Users\Valerio\Desktop\data\img\img0.jpg",
-        partecipants: 5
-      },
-      {
-        id: 1,
-        name: "Portrait",
-        description: "Sto cazzo",
-        date: "13/12/2017",
-        hour: "4:30 pm",
-        owner: "Ilaria Vercelli ",
-        location: "Milano,Ilaria's House",
-        image: "./img/img4.jpg",
-        participants: 5
-      },
 
-    ]
+    this.service.getEvents().subscribe(arg => this.eventsList = arg);
+
+
     for (let item of this.eventsList) {
       if (item.id === 0) {
         this.incoming.push(item);
