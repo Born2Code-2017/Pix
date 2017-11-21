@@ -65,6 +65,8 @@ Se l'utente non è registrato sara presente un link con un  `Mail To` per contat
 #### Come utente voglio creare un nuovo evento perché voglio che il mio gruppo partecipi
   L'utente potrà compilare il `form` per creare un nuovo evento, caricare un'immagine e salvare o cancellare quanto scritto. Se clicca su `save` l'evento comparirà nella `home-page` e nella pagina `my-events`, in caso contrario verranno cancellati tutti i campi.
 
+### Punti: 8
+### Owner: Manuela
 -----------------------------
 
 *__Pix Team, 21/11/2017__*
