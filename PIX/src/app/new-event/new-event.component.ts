@@ -1,6 +1,8 @@
 import {Component} from '@angular/core';
+
 import {Events} from './events';
 import {HttpClient} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-newevent',
@@ -11,6 +13,7 @@ export class NewEventComponent {
 
   events: Events[];
   listaEventi = {};
+
   private name: string;
   private description: string;
   private time: string;
@@ -22,7 +25,7 @@ export class NewEventComponent {
 
   createEvent() {
     let event;
-    event = new Events();
+    event = new Event();
     event.name = this.name;
     event.description = this.description;
     event.time = this.time;
