@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 
-import {Events} from './events';
+import {Events} from './events.model';
 import {HttpClient} from '@angular/common/http';
 
 
@@ -11,7 +11,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class NewEventComponent {
 
-  events: Events[];
+  // events: Events[];
   listaEventi = {};
 
   private name: string;
@@ -20,25 +20,25 @@ export class NewEventComponent {
   private day: string;
   private location: string;
 
-  constructor(private req: HttpClient) {
+  constructor(private http: HttpClient) { // initialize an http request
   }
 
   createEvent() {
-    let event;
-    event = new Event();
+    let event; // refers to "events.model.ts" and initialize a new class
+    event = new Events();
     event.name = this.name;
     event.description = this.description;
     event.time = this.time;
     event.date = this.day;
     event.place = this.location;
     /*event.photo = pic;*/
-    this.listaEventi = event;
+    this.listaEventi = event; // push the event in the object
     console.log(this.listaEventi);
     this.saveEvent();
   }
 
   saveEvent() {
-    localStorage.setItem('Events', JSON.stringify(this.listaEventi));
-    this.req.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe();
+    localStorage.setItem('Events', JSON.stringify(this.listaEventi)); // save new event in local storage (just for debug).
+    this.http.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe(); // send the http request to server
   }
 }
