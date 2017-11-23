@@ -1,4 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -6,24 +8,40 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
-  protected logged: boolean;
+export class LoginComponent {
 
+  constructor(private req: HttpClient, private router: Router) {
+    this.callForUsers();
+  }
+
+  protected logged: boolean;
   protected password: string;
   protected username: string;
   protected userJSON: string;
   protected passwordJSON: string;
-  public currentUser: string;
+  myarr = [];
 
   authenticate() {
-    this.logged = this.username === this.userJSON && this.password === this.passwordJSON;
+    for (const x in this.myarr) {
+      if (this.username === this.myarr[x].username) {
+        console.log('daje');
+        this.router.navigateByUrl('/home');
+      }
+    }
   }
 
-  constructor() {
+  callForUsers() {
+    this.req.get('https://pics-313d5.firebaseio.com/pix/utente.json').subscribe(data => {
+      // this.userJSON = data['0'];
+      // this.passwordJSON = data['password'];
+      for (const i in data) {
+        const name = data[i];
+        name.id = i;
+        this.myarr.push(name);
+      }
+      console.log(this.myarr);
+    });
     this.authenticate();
-  }
-
-  ngOnInit() {
   }
 
 }
