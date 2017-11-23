@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {Events} from './events';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-newevent',
@@ -9,12 +10,15 @@ import {Events} from './events';
 export class NewEventComponent {
 
   events: Events[];
-  array = [];
+  listaEventi = [];
   private name: string;
   private description: string;
   private time: string;
   private day: string;
   private location: string;
+
+  constructor(private req: HttpClient) {
+  }
 
   createEvent() {
     let event;
@@ -25,15 +29,13 @@ export class NewEventComponent {
     event.date = this.day;
     event.place = this.location;
     /*event.photo = pic;*/
-    this.array.push(event);
-    console.log(this.array);
+    this.listaEventi.push(event);
+    console.log(this.listaEventi);
     this.saveEvent();
   }
 
   saveEvent() {
-    localStorage.setItem('Events', JSON.stringify(this.array));
-  }
-
-  constructor() {
+    localStorage.setItem('Events', JSON.stringify(this.listaEventi));
+    this.req.post('https://pics-313d5.firebaseio.com/eventi.json', this.listaEventi).subscribe();
   }
 }

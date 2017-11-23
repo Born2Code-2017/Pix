@@ -9,3 +9,12 @@ export class Event{
     image: any;
     partecipants: number;
 }
+
+// export class Users{
+//   name: string;
+//   password: string;
+//   foto: any;
+//   eventi = [];
+//   eventiiOwner = [];
+//   eventiNonPartecipa= [];
+// }

@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
 
 @Component({
@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent  {
   protected logged: boolean;
 
   protected password: string;
@@ -21,9 +21,6 @@ export class LoginComponent implements OnInit {
 
   constructor() {
     this.authenticate();
-  }
-
-  ngOnInit() {
   }
 
 }
