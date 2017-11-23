@@ -1,4 +1,4 @@
-import {Event} from "./events/events.model";
+/*import {Event} from "./events/events.model";
 import {Injectable} from "@angular/core";
 import {Http, Response} from "@angular/http";
 import 'rxjs/add/operator/map';
@@ -26,6 +26,6 @@ export class PixService {
       .map((response: Response) => response.json());
   }
 
-}
+}*/
 
 
