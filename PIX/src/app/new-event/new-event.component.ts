@@ -10,7 +10,7 @@ import {HttpClient} from '@angular/common/http';
 export class NewEventComponent {
 
   events: Events[];
-  listaEventi = [];
+  listaEventi = {};
   private name: string;
   private description: string;
   private time: string;
@@ -29,13 +29,13 @@ export class NewEventComponent {
     event.date = this.day;
     event.place = this.location;
     /*event.photo = pic;*/
-    this.listaEventi.push(event);
+    this.listaEventi = event;
     console.log(this.listaEventi);
     this.saveEvent();
   }
 
   saveEvent() {
     localStorage.setItem('Events', JSON.stringify(this.listaEventi));
-    this.req.post('https://pics-313d5.firebaseio.com/eventi.json', this.listaEventi).subscribe();
+    this.req.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe();
   }
 }
