@@ -3,6 +3,7 @@ import { Event } from './events.model';
 import { HttpClient } from '@angular/common/http'
 import { PixService } from "../app.service";
 
+//import {PixService} from "../app.service";
 
 
 @Component({
@@ -13,7 +14,6 @@ import { PixService } from "../app.service";
 })
 
 export class EventsComponent implements OnInit {
-
 
 
   eventsList: Event[] = new Array<Event>();
