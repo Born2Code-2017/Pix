@@ -24,4 +24,16 @@ export class PixService {
     const url = this.apiUrl + 'eventi.json';
     return this.http.post(url, event);
   }
+
+  public getMyEvents() {
+    const username = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + username + '/myevents.json';
+    return this.http.get(url);
+  }
+
+  public postInMyEvents(event: Events[]) {
+    const username = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + username + '/myevents.json';
+    return this.http.post(url, event);
+  }
 }
