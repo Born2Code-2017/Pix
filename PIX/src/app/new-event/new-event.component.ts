@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {PixService} from '../app.service';
 
 import {Events} from './events.model';
+import {Router} from '@angular/router';
 
 
 @Component({
@@ -20,8 +21,9 @@ export class NewEventComponent {
   private time: string;
   private day: string;
   private location: string;
+  private id: number;
 
-  constructor(service: PixService) {// initialize an http request
+  constructor(service: PixService, private router: Router) {// initialize an http request
     this.service = service;
   }
 
@@ -43,5 +45,7 @@ export class NewEventComponent {
     /*localStorage.setItem('Events', JSON.stringify(this.listaEventi)); // save new event in local storage (just for debug).
     this.http.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe(); // send the http request to server*/
     this.service.createEvent(this.listaEventi).subscribe();
+    this.service.postInMyEvents(this.listaEventi).subscribe();
+    this.router.navigateByUrl('/home');
   }
 }

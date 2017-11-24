@@ -1,16 +1,19 @@
 import {Component} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
+import {PixService} from '../app.service';
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
+  providers: [PixService]
 })
 export class LoginComponent {
+  service: PixService;
 
-  constructor(private req: HttpClient, private router: Router) {
+  constructor(service: PixService, private router: Router) {
+    this.service = service;
     this.callForUsers();
   }
 
@@ -24,14 +27,16 @@ export class LoginComponent {
   authenticate() {
     for (const x in this.myarr) {
       if (this.username === this.myarr[x].username) {
-        console.log('daje');
+        console.log(this.myarr[x].id);
         this.router.navigateByUrl('/home');
+        localStorage.setItem('user', this.username);
+        localStorage.setItem('index', this.myarr[x].id);
       }
     }
   }
 
   callForUsers() {
-    this.req.get('https://pics-313d5.firebaseio.com/pix/utente.json').subscribe(data => {
+    this.service.getUsers().subscribe(data => {
       // this.userJSON = data['0'];
       // this.passwordJSON = data['password'];
       for (const i in data) {
