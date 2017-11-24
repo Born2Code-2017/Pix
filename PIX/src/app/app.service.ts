@@ -25,5 +25,3 @@ export class PixService {
     return this.http.post(url, event);
   }
 }
-
-
