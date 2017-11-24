@@ -23,5 +23,7 @@ export class AsideComponent implements OnInit {
        ]
     }
 
+    
+
     ngOnInit() { }
 }
