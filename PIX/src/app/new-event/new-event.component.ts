@@ -1,18 +1,19 @@
 import {Component} from '@angular/core';
+import {PixService} from '../app.service';
 
 import {Events} from './events.model';
-import {HttpClient} from '@angular/common/http';
 
 
 @Component({
   selector: 'app-newevent',
   templateUrl: './new-event.component.html',
-  styleUrls: ['./new-event.component.css']
+  styleUrls: ['./new-event.component.css'],
+  providers: [PixService]
 })
 export class NewEventComponent {
+  service: PixService;
 
-  // events: Events[];
-  listaEventi = {};
+  listaEventi = [];
 
   private name: string;
   private description: string;
@@ -20,7 +21,8 @@ export class NewEventComponent {
   private day: string;
   private location: string;
 
-  constructor(private http: HttpClient) { // initialize an http request
+  constructor(service: PixService) {// initialize an http request
+    this.service = service;
   }
 
   createEvent() {
@@ -38,7 +40,8 @@ export class NewEventComponent {
   }
 
   saveEvent() {
-    localStorage.setItem('Events', JSON.stringify(this.listaEventi)); // save new event in local storage (just for debug).
-    this.http.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe(); // send the http request to server
+    /*localStorage.setItem('Events', JSON.stringify(this.listaEventi)); // save new event in local storage (just for debug).
+    this.http.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe(); // send the http request to server*/
+    this.service.createEvent(this.listaEventi).subscribe();
   }
 }

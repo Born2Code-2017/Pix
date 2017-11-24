@@ -1,31 +1,27 @@
-import {Event} from './events/events.model';
+import {Events} from './new-event/events.model';
 import {Injectable} from '@angular/core';
-import {Http, Response} from '@angular/http';
-import 'rxjs/add/operator/map';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class PixService {
-  private dbUrl: string;
+  private apiUrl: string;
 
-  constructor(private http: Http) {
-    this.dbUrl = 'https://pics-313d5.firebaseio.com/eventi/';
+  constructor(private http: HttpClient) {
+    this.apiUrl = 'https://pics-313d5.firebaseio.com/pix/';
   }
 
   public getEvents() {
-    return this.http.get(this.dbUrl)
-      .map((response: Response) => response.json());
+    const url = this.apiUrl + 'eventi.json';
+    return this.http.get(url);
   }
 
-  public createEvents() {
-    return this.http.post(this.dbUrl, Event)
-      .map((response: Response) => response.json());
+  public getUsers() {
+    const url = this.apiUrl + 'utente.json';
+    return this.http.get(url);
   }
 
-  public deleteEvent() {
-    return this.http.delete(this.dbUrl)
-      .map((response: Response) => response.json());
+  public createEvent(event: Events[]) {
+    const url = this.apiUrl + 'eventi.json';
+    return this.http.post(url, event);
   }
-
-}*/
-
-
+}
