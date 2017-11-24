@@ -27,6 +27,10 @@ const appRoutes: Routes = [
     path: 'login',
     component: LoginComponent
 
+  },
+  {
+    path: 'myevents',
+    component: EventListComponent
   }
 ];
 
