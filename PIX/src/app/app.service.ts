@@ -26,6 +26,6 @@ export class PixService {
       .map((response: Response) => response.json());
   }
 
-}
+}*/
 
 
