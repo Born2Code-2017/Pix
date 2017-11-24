@@ -11,7 +11,7 @@ import { PixService } from "../app.service";
 })
 export class EventListComponent implements OnInit {
 
-  myEvents: Event[];
+  myEvents: Event[]=new Array<Event>();;
   private service: PixService;
   constructor(service: PixService) {
     this.service = service;
@@ -21,8 +21,9 @@ export class EventListComponent implements OnInit {
   ngOnInit() {
     console.log('entra');
     // Make the HTTP request:
-    this.service.getUsers().subscribe(data => {
+    this.service.getMyEvents().subscribe(data => {
       // Read the result field from the JSON response.
+      console.log("boh")
       let j = 0;
       for (let i in data) {
         var event = data[i]
@@ -35,6 +36,7 @@ export class EventListComponent implements OnInit {
           this.myEvents
         }
       }
+      console.log(this.myEvents)
     });
   }
 
