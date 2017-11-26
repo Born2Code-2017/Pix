@@ -26,14 +26,14 @@ export class PixService {
   }
 
   public getMyEvents() {
-    const username = localStorage.getItem('index');
-    const url = this.apiUrl + 'utente/' + username + '/myevents.json';
+    const index = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + index + '/myevents.json';
     return this.http.get(url);
   }
 
   public postInMyEvents(event: Events[]) {
-    const username = localStorage.getItem('index');
-    const url = this.apiUrl + 'utente/' + username + '/myevents.json';
+    const index = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + index + '/myevents.json';
     return this.http.post(url, event);
   }
 }

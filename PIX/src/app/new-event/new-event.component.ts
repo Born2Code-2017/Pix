@@ -21,7 +21,7 @@ export class NewEventComponent {
   private time: string;
   private day: string;
   private location: string;
-  private id: number;
+  // private id: number;
 
   constructor(service: PixService, private router: Router) {// initialize an http request
     this.service = service;
@@ -46,6 +46,6 @@ export class NewEventComponent {
     this.http.post('https://pics-313d5.firebaseio.com/pix/eventi.json', this.listaEventi).subscribe(); // send the http request to server*/
     this.service.createEvent(this.listaEventi).subscribe();
     this.service.postInMyEvents(this.listaEventi).subscribe();
-    this.router.navigateByUrl('/home');
+    this.router.navigateByUrl('/myevents');
   }
 }
