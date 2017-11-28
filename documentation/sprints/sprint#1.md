@@ -1,5 +1,5 @@
 # Sprint #1
------------------------------
+
 
 ## Storia #1 (Login):
 #### Come utente voglio loggarmi perché è un gruppo chiuso
@@ -26,7 +26,7 @@ Se l'utente non è registrato sara presente un link con un  `Mail To` per contat
 ## Storia #3 (Home-Page):
 #### Come utente voglio navigare nell'app per accedere a tutte le funzionalità
 
-  Dalla `navbar` sarà possibile raggiungere la pagina per la creazione di un `nuovo envento`, la pagina degli `eventi creati` dall'utente loggato e tornare alla `home-page`. La `navbar` sarà presente in ogni pagina dell'app
+  Dalla `navbar` sarà possibile raggiungere la pagina per la creazione di un `nuovo evento`, la pagina degli `eventi creati` dall'utente loggato e tornare alla `home-page`. La `navbar` sarà presente in ogni pagina dell'app
 
 ### Punti: 4
 ### Owner: Valerio
