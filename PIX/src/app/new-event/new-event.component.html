@@ -12,7 +12,7 @@
     </button>
   </div>
 
-  <div class="col-md-9">
+  <form class="col-md-9">
 
     <div class="form-group col-md-3 col-md-offset-3">
       <label for="eventname">Event's name:</label>
@@ -38,12 +38,13 @@
       <label for="description">Description:</label>
       <textarea id="description" class="form-control" name="description" [(ngModel)]="description"></textarea>
     </div>
-  </div>
 
-  <div class="col-md-3 pull-right text-center">
-    <button type="reset" class="btn">DELETE</button>
-  </div>
-  <div class="col-md-4 pull-right text-center">
-    <button type="button" class="btn" (click)="createEvent()">CREATE</button>
-  </div>
+
+    <div class="col-md-3 pull-right text-center">
+      <button type="reset" class="btn">DELETE</button>
+    </div>
+    <div class="col-md-4 pull-right text-center">
+      <button type="button" class="btn" (click)="createEvent()">CREATE</button>
+    </div>
+  </form>
 </div>
