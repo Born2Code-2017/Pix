@@ -5,6 +5,7 @@ import {HttpClient} from '@angular/common/http';
 @Injectable()
 export class PixService {
   private apiUrl: string;
+  public eventDetails: Events;
 
   constructor(private http: HttpClient) {
     this.apiUrl = 'https://pics-313d5.firebaseio.com/pix/';
@@ -35,5 +36,10 @@ export class PixService {
     const index = localStorage.getItem('index');
     const url = this.apiUrl + 'utente/' + index + '/myevents.json';
     return this.http.post(url, event);
+  }
+
+  public getEventDetail(data) {
+    this.eventDetails = data;
+    console.log(this.eventDetails);
   }
 }

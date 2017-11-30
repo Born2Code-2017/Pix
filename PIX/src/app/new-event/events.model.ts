@@ -6,4 +6,5 @@ export class Events {
   time: string;
   description: string;
   photo: string;
+  owner: string;
 }

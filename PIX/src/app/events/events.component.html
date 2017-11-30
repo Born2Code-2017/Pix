@@ -3,7 +3,7 @@
 <div class="col-md-3 img-event">
     <img src="" alt="img-event">
 </div>
-<div class="incoming col-md-3 " *ngFor="let item of incoming">
+<div class="incoming col-md-3" *ngFor="let item of incoming">
 <h5>INCOMING</h5>
 <h3><strong>{{item.name}}</strong></h3>
 <h6>{{item.date}}</h6>
@@ -14,7 +14,7 @@
     <img src="#" alt="img-owner">
     <p>Lalalalal</p>
 </div>
-<div class="col-md-3 img-event" *ngFor="let item of eventsList">
+<div class="col-md-3 img-event" *ngFor="let item of eventsList" (click)="goToeventDetail(item)">
     <img src="#" alt="" >
     <p>{{item.date}}</p>
     <p><strong>{{item.name}}</strong></p>

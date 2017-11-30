@@ -35,6 +35,7 @@ export class NewEventComponent {
     event.time = this.time;
     event.date = this.day;
     event.place = this.location;
+    event.owner = localStorage.getItem('user');
     /*event.photo = pic;*/
     this.listaEventi = event; // push the event in the object
     console.log(this.listaEventi);
