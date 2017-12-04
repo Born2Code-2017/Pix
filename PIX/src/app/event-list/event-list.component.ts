@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Events} from "../shared/events.model";
-import { HttpClient } from '@angular/common/http'
-import { PixService } from "../app.service";
+import {HttpClient} from '@angular/common/http'
+import {PixService} from "../app.service";
 
 @Component({
   selector: 'app-event-list',
@@ -11,8 +11,9 @@ import { PixService } from "../app.service";
 })
 export class EventListComponent implements OnInit {
 
-  myEvents: Events[]=[];
+  myEvents: Events[] = [];
   private service: PixService;
+
   constructor(service: PixService) {
     this.service = service;
     //this.loadEventList();
@@ -28,11 +29,11 @@ export class EventListComponent implements OnInit {
       for (let i in data) {
         var event = data[i];
         event.id = i;
-        if (j !== 4){
-        this.myEvents.push(event);
-        j++;
-        console.log(j)
-        }else{
+        if (j !== 4) {
+          this.myEvents.push(event);
+          j++;
+          console.log(j)
+        } else {
           //this.myEvents
         }
       }
