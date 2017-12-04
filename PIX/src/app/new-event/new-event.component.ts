@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {PixService} from '../app.service';
 
-import {Events} from './events.model';
+import {Events} from "../shared/events.model";
 import {Router} from '@angular/router';
 
 

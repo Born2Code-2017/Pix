@@ -1,11 +1,11 @@
-import {Events} from './new-event/events.model';
-import {Injectable} from '@angular/core';
+import {Events} from "./shared/events.model";
+import {Injectable, Input} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable()
 export class PixService {
   private apiUrl: string;
-  public eventDetails: Events;
+  public eventDetails: any;
 
   constructor(private http: HttpClient) {
     this.apiUrl = 'https://pics-313d5.firebaseio.com/pix/';
@@ -38,8 +38,8 @@ export class PixService {
     return this.http.post(url, event);
   }
 
-  public getEventDetail(data) {
+  /*public getEventDetail(data) {
     this.eventDetails = data;
     console.log(this.eventDetails);
-  }
+  }*/
 }

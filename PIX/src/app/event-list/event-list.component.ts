@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Event} from "../events/events.model";
+import {Events} from "../shared/events.model";
 import { HttpClient } from '@angular/common/http'
 import { PixService } from "../app.service";
 
@@ -11,7 +11,7 @@ import { PixService } from "../app.service";
 })
 export class EventListComponent implements OnInit {
 
-  myEvents: Event[]=new Array<Event>();;
+  myEvents: Events[]=[];
   private service: PixService;
   constructor(service: PixService) {
     this.service = service;
@@ -23,17 +23,17 @@ export class EventListComponent implements OnInit {
     // Make the HTTP request:
     this.service.getMyEvents().subscribe(data => {
       // Read the result field from the JSON response.
-      console.log("boh")
+      console.log("boh");
       let j = 0;
       for (let i in data) {
-        var event = data[i]
-        event.id = i
+        var event = data[i];
+        event.id = i;
         if (j !== 4){
         this.myEvents.push(event);
-        j++
+        j++;
         console.log(j)
         }else{
-          this.myEvents
+          //this.myEvents
         }
       }
       console.log(this.myEvents)
