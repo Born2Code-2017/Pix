@@ -21,3 +21,13 @@ nav a:hover{
 nav a :active{
     color:#f19645;
 }
+
+
+.customClass {
+    background-color: #dd3;
+    border-radius: 0px;
+    margin:1px;
+    width: 0px;
+}
+
+.container { border:2px solid #ccc; width:300px; height: 100px; overflow-y: scroll; }

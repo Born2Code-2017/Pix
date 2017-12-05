@@ -4,6 +4,8 @@ import {EventsComponent} from './events/events.component';
 import {NewEventComponent} from './new-event/new-event.component';
 import {EventListComponent} from './event-list/event-list.component';
 import {LoginComponent} from './login/login.component';
+import {EditComponent} from './edit-event/edit-event.component';
+
 
 const appRoutes: Routes = [
   {
@@ -31,6 +33,10 @@ const appRoutes: Routes = [
   {
     path: 'myevents',
     component: EventListComponent
+  },
+  {
+    path: 'editevent',
+    component: EditComponent
   }
 ];
 

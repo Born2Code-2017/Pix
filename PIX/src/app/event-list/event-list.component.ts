@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Event} from "../events/events.model";
 import { HttpClient } from '@angular/common/http'
 import { PixService } from "../app.service";
+import { Events } from '../new-event/events.model';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-event-list',
@@ -11,12 +13,18 @@ import { PixService } from "../app.service";
 })
 export class EventListComponent implements OnInit {
 
-  myEvents: Event[]=new Array<Event>();;
+  myEvents: Events[]=new Array<Events>();
   private service: PixService;
-  constructor(service: PixService) {
+  constructor(service: PixService, private router: Router) {
     this.service = service;
     //this.loadEventList();
   }
+
+  ciccio(item: Events){
+    console.log(item);
+    this.router.navigate(['/editevent'], {queryParams: item})
+  }
+  
 
   ngOnInit() {
     console.log('entra');

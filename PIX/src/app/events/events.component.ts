@@ -47,13 +47,13 @@ export class EventsComponent implements OnInit {
         }else{
           this.eventsList
         }
-        for (let item of this.eventsList) {
-          if (this.eventsList[i] === this.eventsList[0]) {
-            this.incoming.push(this.eventsList[i])
-            this.eventsList.splice(0, 1)
-          }
-          console.log(this.incoming)
+      }
+      for (let item of this.eventsList) {
+        if (item === this.eventsList[0]) {
+          this.incoming.push(item)
+          this.eventsList.splice(0, 1)
         }
+        console.log(this.incoming)
       }
     });
   }

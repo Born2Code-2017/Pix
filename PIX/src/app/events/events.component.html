@@ -4,10 +4,12 @@
     <img src="" alt="img-event">
 </div>
 <div class="incoming col-md-3 " *ngFor="let item of incoming">
-<h5>INCOMING</h5>
-<h3><strong>{{item.name}}</strong></h3>
-<h6>{{item.date}}</h6>
-<h6>{{item.hour}}</h6>
+    <h5>INCOMING</h5>
+    <h3>
+        <strong>{{item.name}}</strong>
+    </h3>
+    <h6>{{item.date}}</h6>
+    <h6>{{item.hour}}</h6>
 </div>
 <div class="col-md-2 owner">
     <h3>Owner</h3>
@@ -15,11 +17,10 @@
     <p>Lalalalal</p>
 </div>
 <div class="col-md-3 img-event" *ngFor="let item of eventsList">
-    <img src="#" alt="" >
+    <img src="#" alt="">
     <p>{{item.date}}</p>
-    <p><strong>{{item.name}}</strong></p>
+    <p>
+        <strong>{{item.name}}</strong>
+    </p>
 </div>
 <app-footer></app-footer>
-
-
-
