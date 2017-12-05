@@ -1,7 +1,7 @@
 import {Component} from '@angular/core';
 import {PixService} from '../app.service';
 
-import {Events} from './events.model';
+import {Events} from "../shared/events.model";
 import {Router} from '@angular/router';
 
 
@@ -35,6 +35,7 @@ export class NewEventComponent {
     event.time = this.time;
     event.date = this.day;
     event.place = this.location;
+    event.owner = localStorage.getItem('user');
     /*event.photo = pic;*/
     this.listaEventi = event; // push the event in the object
     console.log(this.listaEventi);

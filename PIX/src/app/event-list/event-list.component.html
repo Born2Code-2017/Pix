@@ -4,7 +4,8 @@
 </div>
 <div class="col-md-8" *ngFor="let item of myEvents">
   <p class="col-md-4" >{{item.name}}</p>
-  <p class="col-md-4" >{{item.date}}</p>
+  <p class="col-md-4" >{{item.date | date:'dd/MM/yyyy'}}</p>
   <p class="col-md-4" >{{item.time}}</p>
   <p class="col-md-4" >{{item.place}}</p>
 </div>
+<app-footer></app-footer>

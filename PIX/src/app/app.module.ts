@@ -1,7 +1,6 @@
-
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import{FormsModule} from '@angular/forms';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 
 
@@ -14,18 +13,20 @@ import {LoginComponent} from './login/login.component';
 import {NewEventComponent} from './new-event/new-event.component';
 import {EventListComponent} from './event-list/event-list.component';
 import {routing} from './app.routes';
+import {EventdetailComponent} from './eventdetail/eventdetail.component';
+import {PixService} from "./app.service";
 
 
 @NgModule({
   declarations: [
-    AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent
+    AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent, EventdetailComponent
   ],
   imports: [
 
     BrowserModule, FormsModule, HttpClientModule, routing
 
   ],
-  providers: [],
+  providers: [PixService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
