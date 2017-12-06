@@ -1,13 +1,14 @@
 import {Events} from "./shared/events.model";
 import {Injectable, Input} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {CookieService} from "ngx-cookie-service";
 
 @Injectable()
 export class PixService {
   private apiUrl: string;
   public eventDetails: any;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private cookieService: CookieService) {
     this.apiUrl = 'https://pics-313d5.firebaseio.com/pix/';
   }
 
