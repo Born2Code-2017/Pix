@@ -1,7 +1,8 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import {CookieService} from "ngx-cookie-service";
 
 
 import {AppComponent} from './app.component';
@@ -26,7 +27,7 @@ import {PixService} from "./app.service";
     BrowserModule, FormsModule, HttpClientModule, routing
 
   ],
-  providers: [PixService],
+  providers: [PixService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {
