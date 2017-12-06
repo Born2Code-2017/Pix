@@ -35,12 +35,8 @@ export class EventdetailComponent implements OnInit {
         console.log(this.details.date);
         console.log('typeof data:' + typeof data);
         console.log(data);
-
-        //let cazzo = JSON.parse(params.dettagli);
       });
-    //let detailFromLS = localStorage.getItem('details');
-    //this.details = JSON.parse(detailFromLS);
-    // console.log(this.details);
+
     this.formatDate(this.details.date);
   }
 }
