@@ -1,13 +1,30 @@
 <nav class="navbar navbar-default col-md-12 color">
-    <div class="container-fluid ">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">{{appName}}</a>
+  <div class="container-fluid ">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">{{appName}}</a>
+    </div>
+    <div class="dropdown pull-right" >
+        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <img src="{{file}}" >
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li *ngFor="let item of img" (click)="select(item)"><a ><img src="{{item}}"></a></li>         
+        </ul>
       </div>
       <ul class="nav navbar-nav pull-right">
-        <li><a routerLink="/home">HOME</a></li>
-        <li><a routerLink="/newevent">NEW EVENT</a></li>
-        <li><a routerLink="/myevents">MY EVENTS</a></li>
-        <li><img src="#" alt="{{user}}"></li>
-      </ul>
-    </div>
-  </nav>
+          <li>
+            <a routerLink="/home">HOME</a>
+          </li>
+          <li>
+            <a routerLink="/newevent">NEW EVENT</a>
+          </li>
+          <li>
+            <a routerLink="/myevents">MY EVENTS</a>
+          </li>
+          <li>
+            <button type="button">Logout</button>
+          </li>
+        </ul>
+  </div>
+</nav>
