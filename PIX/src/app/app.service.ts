@@ -42,4 +42,11 @@ export class PixService {
     this.eventDetails = data;
     console.log(this.eventDetails);
   }*/
+  public putInMyEvents(id: string,event: Events) {
+    const index = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + index + '/myevents/'+ id +'.json';
+    return this.http.put(url,event);
+  }
+
+
 }

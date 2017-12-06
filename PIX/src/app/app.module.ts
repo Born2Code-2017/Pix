@@ -1,6 +1,8 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
+
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import{FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 
 
@@ -15,11 +17,14 @@ import {EventListComponent} from './event-list/event-list.component';
 import {routing} from './app.routes';
 import {EventdetailComponent} from './eventdetail/eventdetail.component';
 import {PixService} from "./app.service";
+import { EditComponent } from './edit-event/edit-event.component';
+
 
 
 @NgModule({
   declarations: [
-    AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent, EventdetailComponent
+    AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent, EventdetailComponent,
+    EditComponent
   ],
   imports: [
 
