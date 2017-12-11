@@ -17,6 +17,7 @@ button{
     color: #f8f1d4;
     font-size: 3vh;
     font-family: 'Roboto Slab', serif;
+    position:relative;
 }
 
 .group-image{
@@ -25,5 +26,12 @@ button{
 }
 
 .add{
-    float: right;
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+.add p {
+    display:inline-block !important;
+    padding-right:5px !important;
 }
