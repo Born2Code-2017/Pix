@@ -11,7 +11,7 @@
                 <h3>
                     <strong>{{item.name}}</strong>
                 </h3>
-                <h6>{{item.date}}</h6>
+                <h6>{{item.date | date:'dd/MM'}}</h6>
                 <h6>{{item.hour}}</h6>
             </div>
             <div class="owner col-lg-4 col-md-4 col-sm-4 col-xs-4">
@@ -22,9 +22,9 @@
         </div>
         
         <div class="row">
-            <div class="img-event col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of eventsList">
+            <div class="img-event col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of eventsList" (click)="goToeventDetail(item)">
                 <img src="#" alt="">
-                <p>{{item.date}}</p>
+                <p>{{item.date | date:'dd/MM'}}</p>
                 <p>
                     <strong>{{item.name}}</strong>
                 </p>
