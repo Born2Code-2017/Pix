@@ -17,7 +17,7 @@ export class AsideComponent implements OnInit {
     loadGroup(){
        this.group=[
            {
-               name:'Piselloidi',
+               name:'InFocus Photography',
               // image:'img/gruppoFoto.jpg'
            }
        ]

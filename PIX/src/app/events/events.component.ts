@@ -40,20 +40,21 @@ export class EventsComponent implements OnInit {
       for (let i in data) {
         var event = data[i]
         event.id = i
-        if (j !==7){
-        this.eventsList.push(event);
-        j++
-        console.log(j)
-        }else{
+        if (j !== 7) {
+          this.eventsList.push(event);
+          j++
+          console.log(j)
+        } else {
           this.eventsList
         }
-        for (let item of this.eventsList) {
-          if (this.eventsList[i] === this.eventsList[0]) {
-            this.incoming.push(this.eventsList[i])
-            this.eventsList.splice(0, 1)
-          }
-          console.log(this.incoming)
+
+      }
+      for (let item of this.eventsList) {
+        if (item === this.eventsList[0]) {
+          this.incoming.push(item)
+          this.eventsList.splice(0, 1)
         }
+        console.log(this.incoming)
       }
     });
   }
