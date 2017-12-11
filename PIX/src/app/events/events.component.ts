@@ -58,6 +58,7 @@ export class EventsComponent implements OnInit {
       }
     });
   }
+
   goToeventDetail(data: Events) {
     console.log('Data in home is: ', data);
     console.log(data);
