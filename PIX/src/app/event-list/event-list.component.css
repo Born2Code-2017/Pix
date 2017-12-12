@@ -18,4 +18,15 @@
     padding-right:5px !important;
 }
 
+.myEventContainer{
+    height: 15vh;
+    background: #F5F5DC;
+    color: #f19645;
+    font-size: 5vh;
+    
+}
 
+.myEvent{
+    margin-left: 200px;
+    margin-top: 5%;
+}

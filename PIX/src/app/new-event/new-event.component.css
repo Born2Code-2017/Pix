@@ -20,7 +20,7 @@ label {
   font-weight:300;
 }
 
- input[type="text"], input[type="date"], input[type="time"], textarea  {
+input[type="text"], input[type="date"], input[type="time"], textarea  {
      background:transparent !important;
      border:2px solid white !important;
      border-radius: 15px !important;
@@ -28,11 +28,24 @@ label {
      font-weight:300;
  }
 
- ::-moz-placeholder{
+::-moz-placeholder{
   opacity: 1;
   color: rgb(204, 140, 21);
 }
 
- textarea {
+textarea {
    height: 150px;
  }
+
+ .myEventContainer1{
+  height: 15vh;
+  background: #F5F5DC;
+  color: #f19645;
+  font-size: 5vh;  
+}
+.myEvent{
+  margin-left: 200px;
+  bottom: 0;
+  height: 15vh;
+  
+}
