@@ -5,7 +5,7 @@
 
 nav{
     margin-bottom: 0;
-    border: none !important;
+    border: none #17282f !important;
 }
 
 nav a{
@@ -24,8 +24,21 @@ nav a :active{
 .customClass {
     background-color: #dd3;
     border-radius: 0px;
-    margin:1px;
     width: 0px;
 }
 
-.container { border:2px solid #ccc; width:300px; height: 100px; overflow-y: scroll; }
+.container { 
+    width:300px; 
+    height: 100px; 
+    overflow-y: scroll; 
+}
+
+
+.dropdown-menu{
+    background: transparent !important;
+}
+
+.dropdown pull-right{
+    width: 10px;
+    background: transparent !important;
+}

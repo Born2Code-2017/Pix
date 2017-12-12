@@ -6,3 +6,17 @@
   margin-top: 15%;
 }
 
+.button_login{
+  margin-top: 5%;
+}
+
+.footer{
+  background-color: transparent;
+  color: #f8f1d4;
+  position: absolute;
+  bottom:0;
+}
+
+.text-center{
+  padding-bottom: -1%;
+}

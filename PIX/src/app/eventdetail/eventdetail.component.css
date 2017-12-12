@@ -1,0 +1,47 @@
+.eventDetail_container{
+    width: auto;
+
+    background-color: #17282f;
+}
+
+
+.eventDetail{
+    background-color: #c0c0c0a2;
+    color: black;
+    text-align: right;
+}
+
+#side_bar{
+    background: #ff2d36;
+    height: 50vw;
+    float: left;
+}
+
+#yep_btn, #nope_btn, #addChange_btn{
+    width: 7vw;
+    height: 7vw;
+    margin-top: 70%;
+    border-radius: 50%;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    
+}
+
+#buttonNope, #buttonYep, #buttonAddChange{
+    text-align: center; 
+}
+
+.count_div{
+    font-size: 3vw;
+    color: white;
+    text-align: center;   
+    margin-top: 150%;    
+}
+
+.count_div p{
+    font-size: 0.7vw;
+    color: white;
+    text-align: center;  
+}

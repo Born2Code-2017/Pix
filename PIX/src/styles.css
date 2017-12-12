@@ -4,15 +4,17 @@
 
 html {
     min-height:100%;
-    position: relative;
-    background-color: hsl(198, 34%, 14%);
+    position: relative;    
 }
 
 body {
     min-height:100%;
     margin: 0;
     padding:0;
-    background-color: #17282F;
-    color: #f19645;    
+    color: #f19645;
+    
+    background: url("assets/login17.jpg");
+    background-size: auto 170%;
+    background-repeat: no-repeat;
 }
 
