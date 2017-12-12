@@ -1,8 +1,10 @@
 
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import{FormsModule, ReactiveFormsModule} from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {FormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import {CookieService} from "ngx-cookie-service";
+
 
 
 import {AppComponent} from './app.component';
@@ -17,20 +19,22 @@ import {routing} from './app.routes';
 import {EventdetailComponent} from './eventdetail/eventdetail.component';
 import {PixService} from "./app.service";
 import { EditComponent } from './edit-event/edit-event.component';
+import { FooterLoginComponent } from './footer-login/footer-login.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent, EventdetailComponent,
-    EditComponent
+    EditComponent,
+    FooterLoginComponent
   ],
   imports: [
 
     BrowserModule, FormsModule, HttpClientModule, routing
 
   ],
-  providers: [PixService],
+  providers: [PixService, CookieService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

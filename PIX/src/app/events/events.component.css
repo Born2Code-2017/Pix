@@ -1,18 +1,28 @@
+.row {
+    background-color: #17282F;
+}
+
+.row{
+    background-color: #17282f;
+}
+
+
 
 .img-event{
     float:left;
     height:28.3vh;
+    background: rgb(184, 89, 0)
 }
 
-.incoming{
-    float:left;
-    margin-top:0;
+.incoming, .owner{
+    background: orange;
     height:28.3vh;
  }
 
- .owner{
-     float:left;
-     margin-top:0;
-     padding-left: 5%;
-     height:28.3vh;
+.owner{
+     background: rgb(228, 148, 43);
+     float: left;
+     margin-top: 0;
+     height: 28.3vh;
  }
+

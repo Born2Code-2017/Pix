@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {Router} from '@angular/router';
 import {PixService} from '../app.service';
+import {CookieService} from "ngx-cookie-service";
 
 
 @Component({
@@ -12,7 +13,7 @@ import {PixService} from '../app.service';
 export class LoginComponent {
   service: PixService;
 
-  constructor(service: PixService, private router: Router) {
+  constructor(service: PixService, private router: Router, private cookieService: CookieService) {
     this.service = service;
     this.callForUsers();
   }
@@ -29,6 +30,7 @@ export class LoginComponent {
       if (this.username === this.myarr[x].username) {
         console.log(this.myarr[x].id);
         this.router.navigateByUrl('/home');
+        this.cookieService.set('user', this.username);
         localStorage.setItem('user', this.username);
         localStorage.setItem('index', this.myarr[x].id);
       }
