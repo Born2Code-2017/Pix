@@ -9,7 +9,10 @@
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li *ngFor="let item of img" (click)="select(item)"><a ><img src="{{item}}"></a></li>         
+            <li *ngFor="let item of img" (click)="select(item)"><a ><img src="{{item}}"></a></li>
+            <li>
+              <button type="button" routerLink="/login">Logout</button>
+            </li>         
         </ul>
       </div>
       <ul class="nav navbar-nav pull-right">
@@ -21,9 +24,6 @@
           </li>
           <li>
             <a routerLink="/myevents">MY EVENTS</a>
-          </li>
-          <li>
-            <button type="button">Logout</button>
           </li>
         </ul>
   </div>

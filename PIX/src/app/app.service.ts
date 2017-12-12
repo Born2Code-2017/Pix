@@ -48,5 +48,17 @@ export class PixService {
     return this.http.put(url,event);
   }
 
+  public getImage(){
+    const index = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + index + '/image.json';
+    return this.http.get(url);
+  }
+
+  public putImage(image: string){
+    const index = localStorage.getItem('index');
+    const url = this.apiUrl + 'utente/' + index + '/image.json';
+    return this.http.put(url, image);
+  }
+
 
 }
