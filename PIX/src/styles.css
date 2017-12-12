@@ -13,21 +13,9 @@ body {
     margin: 0;
     padding: 0;
     /* background-color: #17282F;*/
-    /*----- LOGIN12 ---------
-    background: url("assets/login12.jpg") -400px 0;
-    background-size: auto 185%;*/
-    /* ---- LOGIN13 --------
-    background: url("assets/login13.jpg") -400px 0;
-    background-size: auto 185%; */
-    /* ------ LOGIN15 ------
-    background: url("assets/login15.jpg") -300px -150px;
-    background-size: auto 190%; */
-    /* ------ LOGIN17 ------*/
     background: url("assets/login17.jpg");
     background-size: auto 170%;
-    /* ----- LOGIN18 -----
-    background: url("assets/login18.jpg");
-    background-size: auto 170%;*/
     background-repeat: no-repeat;
+    background-color: #16282f;
     color: #f19645;
 }
