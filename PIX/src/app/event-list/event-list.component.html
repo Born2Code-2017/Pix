@@ -1,14 +1,19 @@
 <app-menu></app-menu>
-<div class="col-md-12">
-  <div class="col-md-4 col-md-offset-4">My Events </div>
+<div class="myEventContainer col-md-12">
+  <div class="myEvent col-md-4 col-md-offset-4">My Events </div>
 </div>
-<div class="col-md-8" *ngFor="let item of myEvents">
+<div class="boxEvent col-md-8" *ngFor="let item of myEvents">
   <p class="col-md-4" >{{item.name}}</p>
   <p class="col-md-4" >{{item.date | date:'dd/MM/yyyy'}}</p>
   <p class="col-md-4" >{{item.time}}</p>
   <p class="col-md-4" >{{item.place}}</p>
   <button type="button" class="btn btn-default" routerLink='/editevent' (click)="ciccio(item)">
       <i class="glyphicon glyphicon-pencil"></i>Edit</button>
-
+</div>
+<div class="add_btn">
+  <p>Add new event</p>
+  <button class="btn btn-default" routerLink="/newevent">
+      <i class="glyphicon glyphicon-plus"></i>
+  </button>
 </div>
 <app-footer></app-footer>

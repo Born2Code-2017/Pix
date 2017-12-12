@@ -1,0 +1,32 @@
+.boxEvent{
+    border: 1px solid aqua;
+    width: 100%;
+}
+
+.add{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    border-radius: 50%;    
+    background-color: #f19645;
+    border: 3px solid #f19645;
+    z-index: 2;
+}
+
+.add p{
+    display:inline-block !important;
+    padding-right:5px !important;
+}
+
+.myEventContainer{
+    height: 15vh;
+    background: #F5F5DC;
+    color: #f19645;
+    font-size: 5vh;
+    
+}
+
+.myEvent{
+    margin-left: 200px;
+    margin-top: 5%;
+}

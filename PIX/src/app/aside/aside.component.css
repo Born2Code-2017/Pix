@@ -1,26 +1,37 @@
-body{
-    margin: 0 auto;
-}
+
 button{
-    margin-bottom:5%;
-    margin-top:60vh;
-    z-index: 2;
-    float:left;
+    /*margin-top:60vh;
+    float:right;*/
+    border-radius: 50%;    
     background-color: #f19645;
-    border-radius: 50%;
     border: 3px solid #f19645;
-    margin-left: 60%;
+    z-index: 2;
+    
 }
 
 .aside {
-    margin-top:0;
-    height:85vh;
+    height:87vh;
     float:left;
+    margin-top:0;    
     background-color: #17282f;
     color: #f8f1d4;
+    font-size: 3vh;
+    font-family: 'Roboto Slab', serif;
+    position:relative;
 }
 
 .group-image{
     margin-top:5%;
     margin-bottom: 5%;
+}
+
+.add{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+}
+
+.add p {
+    display:inline-block !important;
+    padding-right:5px !important;
 }

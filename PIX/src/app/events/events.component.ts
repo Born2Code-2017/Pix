@@ -38,26 +38,23 @@ export class EventsComponent implements OnInit {
       // Read the result field from the JSON response.
       let j = 0;
       for (let i in data) {
-        let event = data[i];
-        console.log(i);
-        event.id = i;
+        var event = data[i]
+        event.id = i
         if (j !== 7) {
           this.eventsList.push(event);
-          j++;
-          console.log(event)
+          j++
+          console.log(j)
         } else {
-          // this.eventsList;
+          this.eventsList
         }
+
       }
       for (let item of this.eventsList) {
-        console.log('ITEM:' + item);
         if (item === this.eventsList[0]) {
-          console.log('Riga 53:' + item);
-          this.incoming.push(item);
-          console.log(this.incoming);
+          this.incoming.push(item)
           this.eventsList.splice(0, 1)
         }
-        // console.log(this.incoming)
+        console.log(this.incoming)
       }
     });
   }

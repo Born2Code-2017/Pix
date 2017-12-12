@@ -3,14 +3,20 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 html {
+<<<<<<< HEAD
     min-height: 100%;
     position: relative;
     /*  background-color: hsl(198, 34%, 14%);*/
+=======
+    min-height:100%;
+    position: relative;    
+>>>>>>> Elisa
 }
 
 body {
     min-height: 100%;
     margin: 0;
+<<<<<<< HEAD
     padding: 0;
     /* background-color: #17282F;*/
     background: url("assets/login17.jpg");
@@ -19,3 +25,13 @@ body {
     background-color: #16282f;
     color: #f19645;
 }
+=======
+    padding:0;
+    color: #f19645;
+    
+    background: url("assets/login17.jpg");
+    background-size: auto 170%;
+    background-repeat: no-repeat;
+}
+
+>>>>>>> Elisa
