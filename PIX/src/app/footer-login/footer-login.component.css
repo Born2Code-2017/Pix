@@ -1,6 +1,10 @@
 .footer {
-    background-color: #17282f;
+    position: absolute;
     color: #f8f1d4;
     margin-bottom: 0;
     bottom: 0;
+}
+
+.glyphicon-heart {
+    color: #ef363d;
 }

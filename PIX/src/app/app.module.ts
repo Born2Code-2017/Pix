@@ -19,13 +19,15 @@ import {routing} from './app.routes';
 import {EventdetailComponent} from './eventdetail/eventdetail.component';
 import {PixService} from "./app.service";
 import { EditComponent } from './edit-event/edit-event.component';
+import { FooterLoginComponent } from './footer-login/footer-login.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent, MenuComponent, AsideComponent, FooterComponent, EventsComponent, LoginComponent, NewEventComponent, EventListComponent, EventdetailComponent,
-    EditComponent
+    EditComponent,
+    FooterLoginComponent
   ],
   imports: [
 
