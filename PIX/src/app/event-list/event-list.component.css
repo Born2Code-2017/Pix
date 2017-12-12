@@ -1,0 +1,21 @@
+.boxEvent{
+    border: 1px solid aqua;
+    width: 100%;
+}
+
+.add_btn{
+    position:absolute;
+    bottom:5px;
+    right:5px;
+    border-radius: 50%;    
+    background-color: #f19645;
+    border: 3px solid #f19645;
+    z-index: 2;
+}
+
+p.add_btn{
+    display:inline-block !important;
+    padding-right:5px !important;
+}
+
+
