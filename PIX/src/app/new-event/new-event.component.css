@@ -47,5 +47,9 @@ textarea {
   margin-left: 200px;
   bottom: 0;
   height: 15vh;
-  
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }

@@ -1,32 +1,59 @@
 .boxEvent{
     border: 1px solid aqua;
     width: 100%;
+    margin-top: 5px;
+    height: 15vh;
+    font-size: 3vh;
+    color: #17282f;
 }
 
-.add{
-    position:absolute;
-    bottom:5px;
-    right:5px;
-    border-radius: 50%;    
-    background-color: #f19645;
-    border: 3px solid #f19645;
-    z-index: 2;
-}
-
-.add p{
-    display:inline-block !important;
-    padding-right:5px !important;
+.boxEvent p{
+    margin-top: 4vh;
+    width: 40vh;
 }
 
 .myEventContainer{
     height: 15vh;
     background: #F5F5DC;
-    color: #f19645;
-    font-size: 5vh;
-    
+    color: #17282f;
+    font-size: 4vh;
 }
 
 .myEvent{
     margin-left: 200px;
     margin-top: 5%;
 }
+
+.add{
+    position:absolute;
+    right: 30px;
+    margin-top: 6%;
+}
+
+.add p {
+    display:inline-block !important;
+    padding-right:5px !important;
+    color: rgb(106, 122, 209);
+    font-size: 3vh;
+}
+
+button{
+    border-radius: 50%;    
+    background-color: transparent;
+    border: 3px solid #f19645;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    color: #17282f;
+    font-size: 2vh;
+}
+
+.Eventime{
+    font-size: 5vh;
+}
+
+.edit{
+    font-size: 5vh;
+    color: white;
+}
+

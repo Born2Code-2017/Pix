@@ -1,6 +1,5 @@
 .eventDetail_container{
     width: auto;
-
     background-color: #17282f;
 }
 
@@ -9,6 +8,8 @@
     background-color: #c0c0c0a2;
     color: black;
     text-align: right;
+    height: 87vh;
+    width: 30vw;
 }
 
 #side_bar{
@@ -26,7 +27,6 @@
     background: transparent;
     color: white;
     cursor: pointer;
-    
 }
 
 #buttonNope, #buttonYep, #buttonAddChange{

@@ -1,13 +1,4 @@
 
-button{
-    /*margin-top:60vh;
-    float:right;*/
-    border-radius: 50%;    
-    background-color: #f19645;
-    border: 3px solid #f19645;
-    z-index: 2;
-    
-}
 
 .aside {
     height:87vh;
@@ -21,17 +12,29 @@ button{
 }
 
 .group-image{
-    margin-top:5%;
+    margin-top: 5%;
     margin-bottom: 5%;
+    margin-left: 22%;
+    width: 60%;
+    height: 30%;
+    background-color: #f8f1d4;
 }
 
 .add{
     position:absolute;
-    bottom:5px;
     right:5px;
+    margin-top: 90%;
 }
 
 .add p {
     display:inline-block !important;
     padding-right:5px !important;
+}
+
+button{
+    
+    border-radius: 50%;    
+    background-color: #f19645;
+    border: 3px solid #f19645;
+    z-index: 2;
 }
