@@ -8,7 +8,8 @@
 .img-event{
     float:left;
     height:28.3vh;
-    background: rgb(184, 89, 0)
+    background: rgb(184, 89, 0);
+    cursor: pointer;
 }
 
 .incomingbox{
