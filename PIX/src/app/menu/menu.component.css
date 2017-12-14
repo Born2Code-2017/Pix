@@ -37,7 +37,18 @@ nav a :active{
 
 
 .dropdown-menu{
-    background: transparent !important;
+    background-color: #f8f1d4 !important;
+    min-width: 0 !important;
+    text-align: center;
+
+}
+
+.dropdown-menu li {
+    cursor: pointer;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f19645;
 }
 
 .dropdown pull-right{
@@ -47,7 +58,7 @@ nav a :active{
 
 
 .dropdown pull-right open{
-    width:300px; 
+    width: 100px; 
 
 }
 h1{
@@ -58,4 +69,28 @@ h1{
 
 .navbar-brand{
     display: none;
+}
+
+.navbar-header{
+    margin-top: -10px;
+}
+
+.imgAvatar{
+    width: 40px;
+    height: 40px;
+}
+
+#dropdownMenu1{
+    background-color: transparent !important;
+    color: white;
+    border: none;
+    height: 57px;
+}
+
+.caret{
+    width: 4px;
+}
+
+ul.dropdown-menu .btn {
+    background-color: #4F888A;
 }
