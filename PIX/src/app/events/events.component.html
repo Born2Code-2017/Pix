@@ -1,35 +1,39 @@
-<app-menu></app-menu>
-<div class="row">
-    <app-aside></app-aside>
-    <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-event">
-                <img src="" alt="img-event">
+<div class="box">
+    <app-menu></app-menu>
+    <div class="row">
+        <app-aside></app-aside>
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-event">
+                    <img src="" alt="img-event">
+                </div>
+                <div class="incomingbox col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of incoming">
+                    <h5 class="incoming">INCOMING</h5>
+                    <h3>
+                        <strong class="nameEventHome">{{item.name}}</strong>
+                    </h3>
+                    <h6 class="dateEventHome">{{item.date | date:'dd/MM'}}</h6>
+                    <h6 class="dateEventHome">{{item.hour}}</h6>
+                </div>
+                <div class="owner col-lg-4 col-md-4 col-sm-4 col-xs-4 pull-right">
+                    <div class="ownerEventHome">
+                    <h3>Owner</h3>
+                    <img  src="#" alt="img-owner">
+                    <p>owner-name</p>
+                    </div>
+                </div>
             </div>
-            <div class="incoming col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of incoming">
-                <h5>INCOMING</h5>
-                <h3>
-                    <strong>{{item.name}}</strong>
-                </h3>
-                <h6>{{item.date | date:'dd/MM'}}</h6>
-                <h6>{{item.hour}}</h6>
-            </div>
-            <div class="owner col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <h3>Owner</h3>
-                <img src="#" alt="img-owner">
-                <p>owner-name</p>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="img-event col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of eventsList" (click)="goToeventDetail(item)">
-                <img src="#" alt="">
-                <p>{{item.date | date:'dd/MM'}}</p>
-                <p>
-                    <strong>{{item.name}}</strong>
-                </p>
+
+            <div class="row">
+                <div class="img-event col-lg-4 col-md-4 col-sm-4 col-xs-4" *ngFor="let item of eventsList" (click)="goToeventDetail(item)">
+                    <img src="#" alt="">
+                    <p>{{item.date | date:'dd/MM'}}</p>
+                    <p>
+                        <strong>{{item.name}}</strong>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>

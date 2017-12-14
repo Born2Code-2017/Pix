@@ -1,0 +1,51 @@
+.background{
+    background-color: #17282F;
+  }
+  
+  .mt-3 {
+    margin-top: 4%;
+  }
+  
+  .mt-5 {
+    margin-top: 8%;
+  }
+  
+  form {
+    background-color: rgb(75, 95, 95);
+  }
+  
+  label {
+    color:white;
+    font-size:1.8rem;
+    font-weight:300;
+  }
+  
+  input[type="text"], input[type="date"], input[type="time"], textarea  {
+       background:transparent !important;
+       border:2px solid white !important;
+       border-radius: 15px !important;
+       color: rgb(204, 140, 21);
+       font-weight:300;
+   }
+  
+  ::-moz-placeholder{
+    opacity: 1;
+    color: rgb(204, 140, 21);
+  }
+  
+  textarea {
+     height: 150px;
+   }
+  
+   .myEventContainer1{
+    height: 15vh;
+    background: #F5F5DC;
+    color: #f19645;
+    font-size: 5vh;  
+  }
+  .myEvent{
+    margin-left: 200px;
+    bottom: 0;
+    height: 15vh;
+    
+  }

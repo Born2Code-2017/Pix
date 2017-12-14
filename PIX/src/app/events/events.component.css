@@ -1,28 +1,58 @@
 .row {
     background-color: #17282F;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    font-family: "Roboto Slab", serif;
 }
-
-.row{
-    background-color: #17282f;
-}
-
-
 
 .img-event{
     float:left;
     height:28.3vh;
-    background: rgb(184, 89, 0)
+    background: rgb(184, 89, 0);
+    cursor: pointer;
 }
 
-.incoming, .owner{
-    background: orange;
+.incomingbox{
+    background: #F8F1D4;
     height:28.3vh;
+    color: #4F888A;
+    margin-top: 0;
+    float: left;
  }
+
+ .incoming{
+     color: #f19646;
+     font-size: 3vh;
+     margin-top: 9%;
+     margin-left: 15%;
+     
+ }
+
+.nameEventHome{
+    font-size: 5vh;
+    margin-left: 15%;    
+}
+
+.dateEventHome{
+    font-size: 4vh;   
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.ownerEventHome{
+    margin-left: 40%;
+}
+
+.box{
+    height: 100vh;
+    width: 100vw;
+}
+
 
 .owner{
-     background: rgb(228, 148, 43);
-     float: left;
-     margin-top: 0;
-     height: 28.3vh;
+    background: #F8F1D4;
+    height:28.3vh;
+    color: #4F888A;
+    margin-top: 0;
+    float: left;
  }
-

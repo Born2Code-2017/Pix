@@ -8,7 +8,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 @Component({
     selector: 'edit-event',
     templateUrl: 'edit-event.component.html',
-   // styleUrls: ['./edit-event.component.css'],
+    styleUrls: ['./edit-event.component.css'],
     providers: [PixService]
 })
 
