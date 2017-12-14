@@ -1,14 +1,14 @@
 
 
 .aside {
-    height:87vh;
-    float:left;
-    margin-top:0;    
+    height: 87vh;
+    float: left;
+    margin-top: 0;    
     background-color: #17282f;
     color: #f8f1d4;
     font-size: 3vh;
     font-family: 'Roboto Slab', serif;
-    position:relative;
+    position: relative;
 }
 
 .group-image{
@@ -21,14 +21,14 @@
 }
 
 .add{
-    position:absolute;
-    right:5px;
-    margin-top: 90%;
+    position: absolute;
+    right: 5px;
+    margin-top: 80%;
 }
 
 .add p {
-    display:inline-block !important;
-    padding-right:5px !important;
+    display: inline-block !important;
+    padding-right: 5px !important;
 }
 
 button{
@@ -37,4 +37,6 @@ button{
     background-color: #f19645;
     border: 3px solid #f19645;
     z-index: 2;
+    width: 50px;
+    height: 50px;
 }

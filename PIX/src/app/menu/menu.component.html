@@ -5,13 +5,13 @@
     </div>
     <div class="dropdown pull-right" >
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <img src="{{file}}" >
+            <img class="imgAvatar" src="{{file}}">
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
             <li *ngFor="let item of img" (click)="select(item)"><a ><img src="{{item}}"></a></li>
             <li>
-              <button type="button" routerLink="/login">Logout</button>
+              <button type="button" class="btn btn-primary" routerLink="/login">Logout</button>
             </li>         
         </ul>
       </div>
