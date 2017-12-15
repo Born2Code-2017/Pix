@@ -12,13 +12,13 @@
 
 form {
   background-color: rgb(75, 95, 95);
-  height: 70vh;
+  height: 72vh;
 }
 
 label {
-  color:white;
-  font-size:1.8rem;
-  font-weight:300;
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 input[type="text"], input[type="date"], input[type="time"], textarea  {
@@ -26,7 +26,7 @@ input[type="text"], input[type="date"], input[type="time"], textarea  {
      border:2px solid white !important;
      border-radius: 15px !important;
      color: rgb(204, 140, 21);
-     font-weight:300;
+     font-weight: 300;
  }
 
 ::-moz-placeholder{
@@ -44,6 +44,7 @@ textarea {
   color: #f19645;
   font-size: 5vh;  
 }
+
 .myEvent{
   margin-left: 200px;
   bottom: 0;

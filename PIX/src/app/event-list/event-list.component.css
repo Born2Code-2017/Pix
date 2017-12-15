@@ -1,10 +1,11 @@
 .boxEvent{
-    border: 1px solid aqua;
+    border: 1px solid #F5F5DC;
     width: 100%;
     margin-top: 5px;
     height: 15vh;
     font-size: 3vh;
-    color: #17282f;
+    color: #F5F5DC;
+    background-image: url("../../assets/images/eve6.jpg");
 }
 
 .boxEvent p{
@@ -15,8 +16,8 @@
 .myEventContainer{
     height: 15vh;
     background: #F5F5DC;
-    color: #17282f;
-    font-size: 4vh;
+    color: #f19645;
+    font-size: 4vh;    
 }
 
 .myEvent{
@@ -54,6 +55,6 @@ button{
 
 .edit{
     font-size: 5vh;
-    color: white;
+    color: #17282f;
 }
 

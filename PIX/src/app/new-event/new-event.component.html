@@ -1,3 +1,4 @@
+<div class="box">  
 <nav xmlns="http://www.w3.org/1999/html">
   <app-menu></app-menu>
 </nav>
@@ -18,7 +19,7 @@
     <div class="row mt-3">
       <div class="form-group col-lg-4 col-lg-offset-2">
         <label for="eventname">Event's name:</label>
-        <input type="text" id="eventname" class="form-control" name="name" [(ngModel)]="name" placeholder="Event Name">
+        <input type="text" id="eventname" class="form-control" name="name" [(ngModel)]="name" placeholder="Event name...">
       </div>
 
       <div class="form-group col-lg-4">
@@ -29,18 +30,18 @@
     <div class="row mt-3">
       <div class="form-group col-lg-4 col-lg-offset-2">
         <label class="col-lg-5" for="place">Place:</label>
-        <input type="text" id="place" class="form-control col-lg-7" name="location" [(ngModel)]="location">
+        <input type="text" id="place" class="form-control col-lg-7" name="location" [(ngModel)]="location" placeholder="Place...">
       </div>
 
       <div class="form-group col-lg-4">
         <label for="time">Time:</label>
-        <input type="time" id="time" class="form-control" name="time" [(ngModel)]="time">
+        <input type="time" id="time" class="form-control" name="time" [(ngModel)]="time" placeholder="">
       </div>
     </div>
     <div class="row mt-3">
       <div class="form-group col-lg-8 col-lg-offset-2">
         <label for="description">Description:</label>
-        <textarea id="description" class="form-control" name="description" [(ngModel)]="description"></textarea>
+        <textarea id="description" class="form-control" name="description" [(ngModel)]="description" placeholder="Description..."></textarea>
       </div>
     </div>
 
@@ -55,3 +56,4 @@
   </form>
 </div>
 <app-footer></app-footer>
+</div>

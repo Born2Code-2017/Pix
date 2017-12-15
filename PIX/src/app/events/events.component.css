@@ -2,7 +2,7 @@
     background-color: #17282F;
     margin-right: 0 !important;
     margin-left: 0 !important;
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Slab", serif;    
 }
 
 .img-event{
@@ -10,6 +10,14 @@
     height:28.3vh;
     background: rgb(184, 89, 0);
     cursor: pointer;
+    background-image: url("../../assets/images/eve4.jpg");
+    background-size: 100% 100%;
+}
+
+.img-event1{
+    background-image: url("../../assets/images/eve1.jpg");
+    background-size: 100%;    
+    height: 28.3vh;
 }
 
 .incomingbox{
@@ -18,6 +26,7 @@
     color: #4F888A;
     margin-top: 0;
     float: left;
+    cursor: pointer;    
  }
 
  .incoming{
@@ -25,7 +34,6 @@
      font-size: 3vh;
      margin-top: 9%;
      margin-left: 15%;
-     
  }
 
 .nameEventHome{
@@ -47,7 +55,6 @@
     height: 100vh;
     width: 100vw;
 }
-
 
 .owner{
     background: #F8F1D4;
